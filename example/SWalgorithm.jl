@@ -29,7 +29,7 @@ function V2V(t::tori, b::Int, k::Int)
         j = k + ld[bk]
         xk = mod(k-1, ld[bk+1])
         xk = (xk) ÷ ld[bk]
-        j = xk == L-1  ? j - ld[bk+1] : j
+        j = xk == L-1 ? j - ld[bk+1] : j
     else
         bk = t.nnb + 1 - b
         j = k - ld[bk]
